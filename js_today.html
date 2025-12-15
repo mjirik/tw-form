@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Vlož dnešní datum</title>
+</head>
+<body>
+  <h1>Formulář s datem</h1>
+
+  <form>
+    <label for="dateInput">Datum:</label>
+    <input type="text" id="dateInput" placeholder="Klikni na tlačítko níže">
+    <button type="button" id="fillDateButton">Vlož dnešní datum</button>
+  </form>
+
+  <script>
+    const button = document.getElementById("fillDateButton");
+    const dateInput = document.getElementById("dateInput");
+
+    button.addEventListener("click", function() {
+      // Získání dnešního data
+      const today = new Date();
+
+      // Formátování do čitelného tvaru (např. 3. 11. 2025)
+      const formatted = today.toLocaleDateString("cs-CZ");
+
+      // Vložení do políčka formuláře
+      dateInput.value = formatted;
+    });
+  </script>
+</body>
+</html>

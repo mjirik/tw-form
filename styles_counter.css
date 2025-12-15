@@ -1,0 +1,67 @@
+
+
+body {
+    background-image: url(https://images.pexels.com/photos/208326/pexels-photo-208326.jpeg);
+    background-size: cover;
+    background-position: topcenter;
+    background-color: rgba(255, 212, 212, 0.9);
+    background-blend-mode: screen;
+}
+/* 
+body {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.1), rgba(236, 16, 16, 0.7)),
+    url("https://images.pexels.com/photos/208326/pexels-photo-208326.jpeg");
+  background-size: cover;
+  background-position: center;
+  
+} */
+/* 
+body {
+  margin: 0;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background: url("https://images.pexels.com/photos/208326/pexels-photo-208326.jpeg")
+             center/cover no-repeat;
+  filter: blur(8px) brightness(0.7);
+  z-index: -1;
+} */
+
+
+.otaznik {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+.napoveda {
+   /*  position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 250px; */
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    color: #333;
+    z-index: 1000;
+}
+
+.skryta {
+    display: none;
+}

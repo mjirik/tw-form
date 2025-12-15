@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World – JavaScript</title>
+  <link rel="stylesheet" href="styles_hello.css">
+
+  
+</head>
+
+
+<body>
+
+
+  <label for="flame-length">Fire-breath length</label>
+<input type="range" id="flame-length"  name="flame_length"
+       value="50" min="0" max="100">
+<span id="flame-value">50 m</span>
+
+  <script>
+    const range = document.getElementById('flame-length');
+    const valueSpan = document.getElementById('flame-value');
+  
+    function updateFlame() {
+      const length = range.value;               // 0–100
+      valueSpan.textContent = length + ' m';    // zobrazíme číslo
+  
+    }
+    range.addEventListener('input', updateFlame);
+  </script>
+</body>
+</html>

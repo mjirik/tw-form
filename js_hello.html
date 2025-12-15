@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World – JavaScript</title>
+  <link rel="stylesheet" href="styles_hello.css">
+
+  
+</head>
+
+
+<body>
+  <button id="myButton">Klikni na mě</button>
+  <p id="output"></p>
+  <p id="obcsas-skyty"  class="skryty">Baf</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const output = document.getElementById("output");
+   
+    button.addEventListener("click", function() {
+      output.textContent = output.textContent + "Ahoj světe!";
+
+    
+    });
+  </script>
+</body>
+</html>
